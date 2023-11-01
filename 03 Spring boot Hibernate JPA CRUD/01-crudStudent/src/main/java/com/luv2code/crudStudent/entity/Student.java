@@ -25,7 +25,13 @@ public class Student {
 
     @Column(name = "email")
     private String email;
+
     //define constructor
+    public Student(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
 
     //define getter/setter
 
